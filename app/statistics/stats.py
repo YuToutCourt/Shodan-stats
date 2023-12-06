@@ -62,7 +62,7 @@ def create_pie_chart(data: List[Dict], title: str, tags:List[str]=None):
         labels = [value[0] for value in values_to_plot]
         data_ = [value[1] for value in values_to_plot]
 
-        ax.pie(data_, labels=labels, autopct='%1.1f%%', shadow=True, colors=random_color(5), explode=[0.1] * 5)
+        ax.pie(data_, labels=labels, autopct='%1.1f%%', shadow=True, colors=random_color(5), explode=[0.1] * len(data_))
         ax.set_title(tag)
 
     fig.suptitle(title, fontsize=16)
