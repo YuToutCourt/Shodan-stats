@@ -42,3 +42,6 @@ TODO : Développez un Script Python pour automatiser la Recherche :
 
 - Utilisez une lib python de visualisation statistique, comme matplotlib ou seaborn, pour créer des graphiques représentant les données recueillies. (les marques, les ports ouverts, et toues les infro(s) importtantes)
 Bonne chance ! Merci !!
+
+
+Lien du git: https://github.com/YuToutCourt/Shodan-stats/blob/main/tp.md
