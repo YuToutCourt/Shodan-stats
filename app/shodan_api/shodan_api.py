@@ -3,7 +3,6 @@ import shodan
 from rich.console import Console
 from typing import List, Dict
 
-
 def execute_query(query: str, api_key: str) -> List[Dict]:
     """
     Execute a Shodan search query and return the results
@@ -13,13 +12,11 @@ def execute_query(query: str, api_key: str) -> List[Dict]:
     :return: The Shodan results
     """
     shodan_api = shodan.Shodan(api_key)
-
     # Use console to display a spinner while the query is being executed
     console = Console()
     with console.status("[bold green]Shodan Search..."):
         results = shodan_api.search(query)
     console.log("Complete")
-
     return results["matches"]
 
 def is_forbidden(value):

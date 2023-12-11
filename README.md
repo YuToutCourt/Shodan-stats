@@ -45,4 +45,7 @@ python main.py -key "YOUR_API_KEY" -q "apache" -s apache.json -g apache.json
 ```
 
 
-![Alt text](/image/screen.png)
+| ![Alt text](/image/screen.png) |
+|:--:|
+| *Example of the result* | 
+
