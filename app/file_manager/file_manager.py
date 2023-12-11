@@ -17,8 +17,7 @@ def save_data(data: List[Dict], file_name: str):
     :param file_name: The file name to save the data in
     """
 
-    if not os.path.exists("./data"):
-        create_data_folder()
+    create_data_folder()
 
     with open(f"./data/{file_name}", "w") as file:
         json.dump(data, file, indent=4)
