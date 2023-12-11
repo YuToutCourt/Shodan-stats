@@ -1,7 +1,14 @@
+import os
 import json
 
 from typing import Dict, List
 
+def create_data_folder():
+    """
+    Create the data folder if it does not exist
+    """
+    if not os.path.exists("./data"):
+        os.makedirs("./data")
 
 def save_data(data: List[Dict], file_name: str):
     """
@@ -9,6 +16,10 @@ def save_data(data: List[Dict], file_name: str):
     :param data: The data to save
     :param file_name: The file name to save the data in
     """
+
+    if not os.path.exists("./data"):
+        create_data_folder()
+
     with open(f"./data/{file_name}", "w") as file:
         json.dump(data, file, indent=4)
 
