@@ -1,11 +1,5 @@
 # Partie 1
 
-- Explication de la pertinence du mot clé, pourquoi il a été choisi et pourquoi c’est sensible
-- Capture d’écran du résultat
-- Commentaire sur la capture
-- Explication de pourquoi cette IoT ne devrait pas être là
-- Conclusion
-
 ## Requête 1 
 
 ## Explication de la pertinence du mot clé, pourquoi il a été choisi et pourquoi c’est sensible
@@ -72,6 +66,8 @@ Comme mentionné précédemment, une caméra de surveillance est censée être s
 
 Cette exploration des caméras de surveillance souligne le risque que représente leur accessibilité à tout un chacun. Il est impératif de prendre conscience de la nécessité de sécuriser ces dispositifs. L'achat et l'installation de caméras de surveillance doivent être effectués avec précaution, en veillant à protéger la vie privée des individus.
 
+
+<br><br><br>
 
 ## Requête 3
 
@@ -231,7 +227,51 @@ Cette recherche souligne la sensibilité de la présence d'assistants vocaux acc
 
 ## Explication de la pertinence du mot clé, pourquoi il a été choisi et pourquoi c’est sensible
 
+- Recherche : Fridge
 
+Le mot clé «Fridge» est pertinent car il permet de repérer des frigos connectés. La sensibilité réside dans la possibilité de repérer des frigos connectés vulnérables aux attaques, surtout lorsque les utilisateurs négligent de modifier les mots de passe par défaut.
+
+| <img src="./image/fridge.png"> |
+|:--:|
+| *Résultat de la recherche "Fridge". Plusieurs frigos connectés sont visibles dans divers pays.* |
+
+## Commentaire sur la capture
+
+Premier et deuxième résultat : On peut voir des frigo connecter avec un serveur web pour le monitoré. 2 frigos de New Zealand donc il doivent avoir le même frigo.
+Le 3ème résultat : Et un frigo d'après shodan mais aucun accès web disponible. Mais il reste visible à tout le monde il faudrait surement rechercher plus en profondeur pour trouver un accès mais on va pas le faire.
+
+## Explication de pourquoi cette IoT ne devrait pas être là
+
+La présence de frigos connectés accessibles publiquement peut présenter des risques. Si jamais j'ai le contrôle du frigo je peux modifier la température du frigo et donc faire pourrir la nourriture/tuer les gens qui mange la nourriture. Fin bref pas une bonne idée
+
+## Conclusion
+
+Cette recherche souligne la sensibilité de la présence de frigos connectés accessibles en ligne. Il est impératif de mettre en œuvre des mesures de sécurité robustes pour ces dispositifs, en restreignant l'accès et en appliquant des pratiques de sécurité adéquates. Les utilisateurs et les administrateurs doivent être conscients des risques potentiels liés à l'exposition des frigos connectés et prendre les mesures nécessaires pour protéger la vie privée et la sécurité des données.
+
+
+## Requête 9
+
+## Explication de la pertinence du mot clé, pourquoi il a été choisi et pourquoi c’est sensible
+
+- Recherche : Raspbian
+
+Le mot clé «Raspbian» est pertinent car il permet de repérer des Raspberry Pi connectés. La sensibilité réside dans ce que les personnes mettent sur leur Raspberry Pi. On peut trouver des choses assez sensible.
+
+| <img src="./image/raspbian.png"> |
+|:--:|
+| *Résultat de la recherche "Raspbian". Plusieurs Raspberry Pi connectés sont visibles dans divers pays.* |
+
+## Commentaire sur la capture
+
+On peut voir que beaucoup d’appareils disposent d’un SSH. On peut supposer que ces appareils permettent de faire des rebonds sur d’autres équipements non connectés à Internet. On peut aussi voir un Raspberry avec un serveur web.
+
+## Explication de pourquoi cette IoT ne devrait pas être là
+
+Il ne doit pas être sur internet, à part si maîtriser, car il dispose d’une grande puissance de calcul et généralement les raspberry sont utilisés pour des montages de machines ou autre.
+
+## Conclusion
+
+Ne pas exposer son raspberry sur Internet si pas nécessaire. Préféré une connexion VPN.
 
 
 
@@ -247,4 +287,4 @@ TODO : Développez un Script Python pour automatiser la Recherche :
 Bonne chance ! Merci !!
 
 
-Lien du git: https://github.com/YuToutCourt/Shodan-stats/blob/main/tp.md
+Lien du git: https://github.com/YuToutCourt/Shodan-stats/tree/main/app
